@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCAAA7"
+    tools:context=".Screen2">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txc"
+        app:layout_constraintEnd_toStartOf="@+id/SkyBlue"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/Yellow"
+        app:layout_constraintTop_toBottomOf="@+id/Pink"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <Button
+        android:id="@+id/Pink"
+        android:layout_width="100dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/circular_button_pink"
+        android:onClick="Pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/Red"
+        android:layout_width="95dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circular_button_red"
+        android:onClick="Red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/SkyBlue"
+        android:layout_width="102dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="112dp"
+        android:background="@drawable/circular_button_skyblue"
+        android:onClick="SkyBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/Yellow"
+        android:layout_width="99dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="120dp"
+        android:background="@drawable/circular_button_gold"
+        android:onClick="Yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Red"
+        app:layout_constraintEnd_toStartOf="@+id/SkyBlue"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/Yellow" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Play"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/Red"
+        app:layout_constraintTop_toBottomOf="@+id/SkyBlue"
+        app:layout_constraintVertical_bias="0.652" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Confirm"
+        android:text="dONE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Red"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Yellow"
+        app:layout_constraintVertical_bias="0.652" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
